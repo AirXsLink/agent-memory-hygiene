@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-memory-hygiene"
+version = "0.1.0"
+description = "Pure-policy write-time hygiene for agent memory: what to store, what to drop, and whose fact it is."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "agent-memory-hygiene contributors" }]
+keywords = ["agent", "memory", "llm", "hygiene", "attribution"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/AirXsLink/agent-memory-hygiene"
+Repository = "https://github.com/AirXsLink/agent-memory-hygiene"
+Issues = "https://github.com/AirXsLink/agent-memory-hygiene/issues"
+Changelog = "https://github.com/AirXsLink/agent-memory-hygiene/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["agent_memory_hygiene*"]
+
+[tool.setuptools.package-data]
+agent_memory_hygiene = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

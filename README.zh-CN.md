@@ -33,8 +33,10 @@ Agent 记忆的写入端卫生：什么该存、什么该丢、这条事实记�
 ## 安装
 
 ```bash
-pip install -e .
+pip install agent-memory-hygiene
 ```
+
+开发时在仓库根目录用 `pip install -e .`。
 
 ## 快速开始
 

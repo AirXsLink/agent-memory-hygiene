@@ -33,8 +33,10 @@ This library covers both, with pure functions and no model calls.
 ## Install
 
 ```bash
-pip install -e .
+pip install agent-memory-hygiene
 ```
+
+For development, install from a checkout with `pip install -e .`.
 
 ## Quick Start
 
